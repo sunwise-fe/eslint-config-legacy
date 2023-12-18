@@ -1,0 +1,37 @@
+{
+  "name": "@sunwise/eslint-config-ts",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/sunwise-fe/eslint-config-legacy#readme",
+  "bugs": {
+    "url": "https://github.com/sunwise-fe/eslint-config-legacy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunwise-fe/eslint-config-legacy.git"
+  },
+  "author": "zuopf769 <469547164@qq.com> (https://github.com/zuopf769)",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  },
+  "dependencies": {
+    "@sunwise/eslint-config-basic": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint-define-config": "^1.24.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  }
+}

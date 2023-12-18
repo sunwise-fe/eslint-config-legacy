@@ -1,0 +1,36 @@
+{
+  "name": "@sunwise/eslint-config-prettier",
+  "version": "1.0.0",
+  "description": "Prettier Config",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/sunwise-fe/eslint-config-legacy#readme",
+  "bugs": {
+    "url": "https://github.com/sunwise-fe/eslint-config-legacy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunwise-fe/eslint-config-legacy.git"
+  },
+  "author": "zuopf769 <469547164@qq.com> (https://github.com/zuopf769)",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-define-config": "^1.24.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-yml": "^1.10.0",
+    "prettier": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  }
+}

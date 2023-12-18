@@ -1,0 +1,37 @@
+{
+  "name": "@sunwise/eslint-config",
+  "version": "2.4.6",
+  "description": "sunwise-fe's ESLint config",
+  "keywords": [
+    "eslint",
+    "config",
+    "preset"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sunwise-fe/eslint-config-legacy#readme",
+  "bugs": {
+    "url": "https://github.com/sunwise-fe/eslint-config-legacy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunwise-fe/eslint-config-legacy.git"
+  },
+  "author": "zuopf769 <469547164@qq.com> (https://github.com/zuopf769)",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "dependencies": {
+    "@sunwise/eslint-config-prettier": "workspace:*",
+    "@sunwise/eslint-config-vue": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@sunwise/eslint-config-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "zuopf769 <469547164@qq.com> (https://github.com/zuopf769)",
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts,.json,.json5,.vue,.md --fix",
+    "release": "bumpp -r && pnpm publish -r"
+  },
+  "devDependencies": {
+    "@sunwise/eslint-config": "workspace:*",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.54.0",
+    "typescript": "^5.2.2"
+  }
+}
