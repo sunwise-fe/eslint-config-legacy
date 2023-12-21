@@ -2,7 +2,7 @@
 
 ESLint config for JavaScript, TypeScript, Vue 2, Vue 3, Prettier.
 
-Forked from [antfu/eslint-config](https://github.com/sxzz/eslint-config-legacy/tree/main)
+Forked from [sxzz/eslint-config](https://github.com/sxzz/eslint-config-legacy/tree/main)
 
 ## Usage
 
@@ -22,6 +22,8 @@ pnpm i -D @sunwise/eslint-config # JavaScript, TypeScript, Vue 2/3 and Prettier
 ```bash
 pnpm i -D @sunwise/eslint-config
 ```
+
+> 注意如果你的项目中type为moudle，请修改配置文件为json或者rc格式
 
 ```javascript
 // .eslintrc.js
@@ -45,13 +47,41 @@ module.exports = {
 ### VSCode
 
 ```jsonc
+{
+  "recommendations": [
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "wangzy.sneak-mark"
+  ]
+}
+```
+
+> 注意: 如果你的项目中还有style部分，需要追加进去相关的配置
+
+```jsonc
 // settings.json
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  // 关闭 vscode 默认的检查工具
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass"],
+  "eslint.run": "onSave",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    "typescript",
-    "typescriptreact",
+    "vue-html",
+    "vue",
     "html",
     "vue",
     "json",
@@ -59,21 +89,10 @@ module.exports = {
     "jsonc",
     "yaml"
   ],
-  "eslint.probe": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html",
-    "vue",
-    "json",
-    "json5",
-    "jsonc",
-    "yaml"
-  ]
+  "eslint.options": {
+    "extensions": [".ts", ".tsx", ".vue"]
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "svg.preview.background": "black"
 }
 ```
-
-### 参考资料
-
-[使用 pnpm 创建一个 monorepo](https://juejin.cn/post/7302249560032690216?searchId=20231218160039CADC0756C3AA466D67DA)
