@@ -63,8 +63,26 @@ module.exports = defineConfig({
         math: 'always'
       }
     ],
-
+    // 忽略属性连字
+    'vue/attribute-hyphenation': 'off',
     // Reactivity Transform
-    'vue/no-setup-props-destructure': 'off'
+    'vue/no-setup-props-destructure': 'off',
+    'vue/attributes-order': [
+      2,
+      {
+        order: [
+          'LIST_RENDERING',
+          'CONDITIONALS',
+          'RENDER_MODIFIERS',
+          'GLOBAL',
+          'UNIQUE',
+          'TWO_WAY_BINDING',
+          'OTHER_ATTR',
+          'EVENTS',
+          'CONTENT',
+          'DEFINITION'
+        ]
+      }
+    ]
   }
 })
