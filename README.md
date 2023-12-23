@@ -7,12 +7,12 @@ Forked from [sxzz/eslint-config](https://github.com/sxzz/eslint-config-legacy/tr
 ## Usage
 
 ```bash
-pnpm i -D @sunwise/eslint-config-basic # JavaScript only
+pnpm i -D @sunwise/eslint-config-legacy-basic # JavaScript only
 # Or yarn add -D / npm install -D
-pnpm i -D @sunwise/eslint-config-ts # JavaScript and TypeScript
-pnpm i -D @sunwise/eslint-config-vue # JavaScript, TypeScript and Vue 2/3 (Auto detect)
-pnpm i -D @sunwise/eslint-config-prettier # Prettier only
-pnpm i -D @sunwise/eslint-config # JavaScript, TypeScript, Vue 2/3 and Prettier
+pnpm i -D @sunwise/eslint-config-legacy-ts # JavaScript and TypeScript
+pnpm i -D @sunwise/eslint-config-legacy-vue # JavaScript, TypeScript and Vue 2/3 (Auto detect)
+pnpm i -D @sunwise/eslint-config-legacy-prettier # Prettier only
+pnpm i -D @sunwise/eslint-config-legacy # JavaScript, TypeScript, Vue 2/3 and Prettier
 ```
 
 ## Quick start
@@ -20,7 +20,7 @@ pnpm i -D @sunwise/eslint-config # JavaScript, TypeScript, Vue 2/3 and Prettier
 ### Vue 3
 
 ```bash
-pnpm i -D @sunwise/eslint-config
+pnpm i -D @sunwise/eslint-config-legacy
 ```
 
 > 注意如果你的项目中type为moudle，请修改配置文件为json或者rc格式
@@ -29,7 +29,7 @@ pnpm i -D @sunwise/eslint-config
 // .eslintrc.js
 module.exports = {
   root: true,
-  extends: ['@sunwise/eslint-config', './.eslintrc-auto-import.json'],
+  extends: ['@sunwise/eslint-config-legacy', './.eslintrc-auto-import.json'],
   rules: {
     // Your custom rules
   }

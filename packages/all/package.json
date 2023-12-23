@@ -1,5 +1,5 @@
 {
-  "name": "@sunwise/eslint-config",
+  "name": "@sunwise/eslint-config-legacy",
   "version": "1.0.1-beta.0",
   "description": "sunwise-fe's ESLint config",
   "keywords": [
